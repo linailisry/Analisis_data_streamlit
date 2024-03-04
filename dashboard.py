@@ -28,7 +28,7 @@ def main():
         
         elif data_option == 'Data Hasil Preprocessing':
             st.subheader('Data Hasil Preprocessing')
-            file_path_hasil = "D:/MSIB/Bangkit/DIcoding/assignment/all_data.csv"
+            file_path_hasil = "all_data.csv"
             preprocessed_data = pd.read_csv(file_path_hasil)
 
             st.write("**Deskripsi Data Hasil Preprocessing:**")
@@ -42,7 +42,7 @@ def main():
         st.subheader("Visualisasi Data")
         data_option = st.sidebar.radio('Pilih Pertanyaan:', ('Pertanyaan 1', 'Pertanyaan 2'))
         if data_option == 'Pertanyaan 1':
-            preprocessed_data = pd.read_csv("D:/MSIB/Bangkit/DIcoding/assignment/all_data.csv")
+            preprocessed_data = pd.read_csv("all_data.csv")
             st.subheader("Diagram Batang untuk Polutan Udara Paling Umum")
             
             AP = ['PM2.5', 'PM10', 'SO2', 'NO2', 'CO', 'O3']
@@ -65,7 +65,7 @@ def main():
             st.write("Kesimpulan: Bagaimana keadaan polusi udara di Changping? Terdapat beberapa jenis polutan udara di Changping dengan jenis polutan paling banyak adalah CO (karbon) sebanyak 89,9% diikuti dengan PM10 (partikulat 10) sebanyak 3,9%, dan NO2 (Nitrogen Dioksida) sebanyak 3,6%")
 
         elif data_option == 'Pertanyaan 2':
-            preprocessed_data = pd.read_csv("D:/MSIB/Bangkit/DIcoding/assignment/all_data.csv")
+            preprocessed_data = pd.read_csv("all_data.csv")
             st.subheader("Tren Polutan Udara di Changping berdasarkan Tahun")
 
             # Membuat kelompok berdasarkan nilai pada kolom 'year'
