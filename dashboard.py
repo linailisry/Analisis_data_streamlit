@@ -16,7 +16,7 @@ def main():
         
         if data_option == 'Data Asli':
             st.subheader('Data Asli')
-            file_path_asli = "D:/MSIB/Bangkit/DIcoding/assignment/data_asli.csv"
+            file_path_asli = "data_asli.csv"
             original_data = pd.read_csv(file_path_asli)
 
             st.write("**Deskripsi Data Asli:**")
